@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shoe Shop</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+
+    <script type="text/x-template" class="shopTemplate">
+        <tr>
+            <tr>
+            <td>Shoe Brand</td>
+            <td>{{shoeBrand}}</td>
+          </tr>
+          <tr>
+            <td>Shoe Color</td>
+            <td>{{shoeColor}}</td>
+          </tr>
+          <tr>
+            <td>Shoe Size</td>
+            <td>{{shoeSize}}</td>
+          </tr>
+       </tr>
+      
+    </script>
+
+
+
+<link rel="stylesheet" href="css/simplegrid.css">>
+<link rel="stylesheet" href="css/shoe.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body> 
+ 
+    <h1 class="heading">Lubabalo's Shoe Shop</h1>
+</div> 
+
+<div class="optionDiv center">
+    <p class="text">Choose the shoe you are looking for:</p>
+
+<div class="shoeOptions">
+        <div class="brand">
+                Select your shoe brand:
+                <select name="shoeBrand" class="brandSelector">
+                    <option value="">Selcect Brand</option>
+                    <option value="nike">Nike</option>
+                    <option value="adidas">Adidas</option>
+                    <option value="puma">Puma</option>
+                </select>
+            </div>
+        <br>
+
+    <div class="color">
+        Select your shoe color:
+        <select name="shoeColor" class="colorSelector">
+            <option value="">Selcect Color</option>
+            <option value="Black">Black</option>
+            <option value="White">White</option>
+            <option value="Blue">Blue</option>
+            <option value="Red">Red</option>
+        </select>
+    </div>
+<br>
+
+    <div class="size">
+        Select your shoe size:
+        <select name="shoeSize" class="sizeSelector">
+            <option value="">Select Size</option>
+            <option value="size4">4</option>
+            <option value="size5">5</option>
+            <option value="size6">6</option>
+            <option value="size7">7</option>
+            <option value="size8">8</option>
+            <option value="size9">9</option>
+        </select>
+    </div>
+<br>
+
+    <button class="searchBtn"><i class="fa fa-search"></i> Search</button>
+
+</div>
+</div>
+
+<tbody class="row1">
+<ul class="displayShoeTemplate">
+
+</ul>
+</tbody>
+
+</body>
+<script src="js/data.js"> charset = "utf-8"</script>
+<script src="js/shoe.js"> charset = "utf-8"</script>
+<script src="js/shoe-dom.js"> charset = "utf-8"</script>
+</html>
